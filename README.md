@@ -19,7 +19,7 @@ jupyter notebook NMFreg_Tutorial_cerebellum_puck180430_6.ipynb
 ```
 * **Remotely** via Google Colab
 
-Click on <a href="https://colab.research.google.com/github/tudaga/NMFreg_tutorial/blob/master/NMFreg_Tutorial_cerebellum_puck180430_6.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
+Don't want to download the data and clone the repo? No problem! Click on <a href="https://colab.research.google.com/github.com/tudaga/interactive_gene_plots/blob/master/Interactive_plots_scRNAseq_Slideseq.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
 
 ## Intro 
 The notebook [NMFreg_Tutorial_cerebellum_puck180430_6.ipynb](https://github.com/tudaga/NMFreg_tutorial/blob/master/NMFreg_Tutorial_cerebellum_puck180430_6.ipynb) goes over a cerebellum example. The basic steps are:
