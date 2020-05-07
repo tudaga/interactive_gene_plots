@@ -1,9 +1,9 @@
-# interactive_geneexpression_plots
-Interactive visualization of marker genes and clustering in Slide-seq and single cell RNAseq data.
+# Interactive gene plots
+Did you just run a clustering algorithm on some single-cell RNAseq or spatial transcriptomic data (e.g. Slide-seq)? Are you trying to interrogate the cluster assignments and interpret them in light of known marker genes? Try this interactive visualization code!
 
-**Coming soon!** Examples of other applications :)
+Remark: The interactive visualizations in this repo utilize [Altair](https://altair-viz.github.io/index.html) and [ipywidgets](https://ipywidgets.readthedocs.io/en/latest/index.html) and are broadly applicable to any high dimensional dataset where one wishes to examine cluster labels in a two dimensional representation and overlay the label information with the value of (informative) features.
 
-Do you have an application where NMFreg might help deconvolve your composite measurements aided by a labeled reference? Send me an email!
+**Coming soon!** Hippocampus example :)
 
 ## How do I run this?
 There are two options:
@@ -13,23 +13,18 @@ Note: This requires standard scientific Python 3 environment. A simple way of ge
 
 Run the following commands in your terminal:
 ```
-git clone https://github.com/tudaga/NMFreg_tutorial
-cd NMFreg_tutorial
-jupyter notebook NMFreg_Tutorial_cerebellum_puck180430_6.ipynb
+git clone https://github.com/tudaga/interactive_gene_plots
+cd interactive_gene_plots
+jupyter notebook interactive_plots_scRNAseq_Slideseq.ipynb
 ```
 * **Remotely** via Google Colab
 
-Don't want to download the data and clone the repo? No problem! Click on <a href="https://colab.research.google.com/github.com/tudaga/interactive_gene_plots/blob/master/Interactive_plots_scRNAseq_Slideseq.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
+Don't want to install anything, download the data or clone the repo? No problem! Click on <a href="https://colab.research.google.com/github/tudaga/interactive_gene_plots/blob/master/Interactive_plots_scRNAseq_Slideseq.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>.
 
 ## Intro 
-The notebook [NMFreg_Tutorial_cerebellum_puck180430_6.ipynb](https://github.com/tudaga/NMFreg_tutorial/blob/master/NMFreg_Tutorial_cerebellum_puck180430_6.ipynb) goes over a cerebellum example. The basic steps are:
-1. Run [NMF](https://en.wikipedia.org/wiki/Non-negative_matrix_factorization) on a labeled single-cell RNA-seq cerebellum dataset to derive an interpretable basis.
-2. Regress the Slide-seq beads onto the basis via [NNLS](https://en.wikipedia.org/wiki/Non-negative_least_squares) to deconvolve each bead into proportional contributins from each cell type.
-3. *Bonus* Get a heuristic measure on the certainty that a bead contains mRNA from a single celltype.
+The notebook [interactive_plots_scRNAseq_Slideseq.ipynb](https://github.com/tudaga/interactive_gene_plots/blob/master/Interactive_plots_scRNAseq_Slideseq.ipynb) goes over a Slide-seq cerebellum example. The content is:
+1. Run a [standard scanpy clustering pipeline](https://scanpy-tutorials.readthedocs.io/en/latest/pbmc3k.html).
+2. Explore the clustering outcome with standard non-interactive plots.
+3. Explore it with interactive plots! :)
 
-If you want to learn more about NMF, watch my lecture on it [here](https://www.youtube.com/watch?v=9f4Rwt0yqr4).
-
-## Reference
-This work is featured in the flagship paper for [Slide-seq: A scalable technology for measuring genome-wide expression at high spatial resolution](https://science.sciencemag.org/content/363/6434/1463).
-
-
+You can download more Slide-seq dataset [here](https://singlecell.broadinstitute.org/single_cell/study/SCP815/sensitive-spatial-genome-wide-expression-profiling-at-cellular-resolution#study-download).
