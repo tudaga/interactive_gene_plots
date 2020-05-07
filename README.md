@@ -27,4 +27,4 @@ The notebook [interactive_plots_scRNAseq_Slideseq.ipynb](https://github.com/tuda
 2. Explore the clustering outcome with standard non-interactive plots.
 3. Explore it with interactive plots! :)
 
-You can download more Slide-seq dataset [here](https://singlecell.broadinstitute.org/single_cell/study/SCP815/sensitive-spatial-genome-wide-expression-profiling-at-cellular-resolution#study-download).
+You can download more Slide-seq datasets [here](https://singlecell.broadinstitute.org/single_cell/study/SCP815/sensitive-spatial-genome-wide-expression-profiling-at-cellular-resolution#study-download).
