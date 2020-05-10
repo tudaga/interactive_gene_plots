@@ -1,6 +1,8 @@
 # Interactive gene plots
 Did you just run a clustering algorithm on some single-cell RNAseq or spatial transcriptomic data (e.g. Slide-seq)? Are you trying to interrogate the cluster assignments and interpret them in light of known marker genes? Try this interactive visualization code!
 
+![](interactive_legend.gif)
+
 Remark: The interactive visualizations in this repo utilize [Altair](https://altair-viz.github.io/index.html) and [ipywidgets](https://ipywidgets.readthedocs.io/en/latest/index.html) and are broadly applicable to any high dimensional dataset where one wishes to examine cluster labels in a two dimensional representation and overlay the label information with the value of (informative) features.
 
 **Coming soon!** Hippocampus example :)
