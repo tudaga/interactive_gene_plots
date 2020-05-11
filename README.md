@@ -1,11 +1,26 @@
 # Interactive gene plots
-Did you just run a clustering algorithm on some single-cell RNAseq or spatial transcriptomic data (e.g. Slide-seq)? Are you trying to interrogate the cluster assignments and interpret them in light of known marker genes? Try this interactive visualization code!
+Did you just run a clustering algorithm on some single-cell RNAseq or spatial transcriptomic data (e.g. Slide-seq)? Are you trying to interrogate the cluster assignments and interpret them in light of known marker genes? Try the interactive visualization code in this repo!
 
+# Demos
+* **Highlight each cluster across different 2D representations of the data:**
 ![](interactive_legend.gif)
 
-Remark: The interactive visualizations in this repo utilize [Altair](https://altair-viz.github.io/index.html) and [ipywidgets](https://ipywidgets.readthedocs.io/en/latest/index.html) and are broadly applicable to any high dimensional dataset where one wishes to examine cluster labels in a two dimensional representation and overlay the label information with the value of (informative) features.
+* **Annotate clusters by intersecting the expression of a gene with the cluster labels:**
+  - Select a gene of interest (either select from a dropdown menu or type in a gene name);
+  - Pay special attention to the bar plot on the very right -- it shows the enrichment of the cluster labels in the beads expressing the gene of interest making it easy to find the biological identity of a cluster;
+  - Toggle between binary expression and color proportional to gene counts (gene count per bead info available by hovering the mouse tooltip);
+  - Customizable lower bound on expression via a slider.
+![](annotate_clusters.gif)
 
-**Coming soon!** Hippocampus example :)
+* **Select an area on one plot and watch it condition the rest of the plots on the selection:**
+![](select_rectangle.gif)
+
+* **Select points on one plot and see where they fall on the other plot:**
+![](link_selection.gif)
+
+**Remark:** The interactive visualizations in this repo utilize [Altair](https://altair-viz.github.io/index.html) and [ipywidgets](https://ipywidgets.readthedocs.io/en/latest/index.html) and are broadly applicable to any high dimensional dataset where one wishes to examine cluster labels in a two dimensional representation and overlay the label information with the value of (informative) features.
+
+**Coming soon!** Turn the notebook into an interactive dashboard with [Voilà](https://voila.readthedocs.io/en/stable/index.html).
 
 ## How do I run this?
 There are two options:
